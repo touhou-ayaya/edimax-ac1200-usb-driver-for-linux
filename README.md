@@ -10,5 +10,6 @@ The driver has been tested on Ubuntu 22.04.1 (5.15.0-58-generic), and works well
 
 ```bash
 sudo apt install build-essential
+sudo apt install linux-headers-$(uname -r) # raspberrypi: sudo apt install raspberrypi-kernel-headers
 make
 ```
