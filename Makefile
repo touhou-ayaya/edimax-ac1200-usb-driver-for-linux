@@ -1929,6 +1929,11 @@ INSTALL_PREFIX :=
 MODULE_NAME := wlan
 endif
 
+# MODDESTDIR := /home/touhou/100ask_imx6ull-sdk/Linux-4.9.88/drivers/net/wireless
+# STAGINGMODDIR := /home/touhou/100ask_imx6ull-sdk/Linux-4.9.88/drivers/staging
+# KSRC := /home/touhou/100ask_imx6ull-sdk/Linux-4.9.88
+# KVER := 4.9.88
+
 ifeq ($(CONFIG_PLATFORM_ARM_RTD299X_LG), y)
 EXTRA_CFLAGS += -DCONFIG_LITTLE_ENDIAN
 EXTRA_CFLAGS += -DCONFIG_IOCTL_CFG80211 -DRTW_USE_CFG80211_STA_EVENT
