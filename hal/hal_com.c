@@ -16550,7 +16550,8 @@ u8 phy_get_current_tx_num(_adapter *adapter, enum MGN_RATE rate)
 #ifdef CONFIG_RTL8812A
 u8 * rtw_hal_set_8812a_vendor_ie(_adapter *padapter , u8 *pframe ,uint *frlen ) {
 	int vender_len = 7;
-	unsigned char	vendor_info[vender_len];
+	// unsigned char	vendor_info[vender_len];
+	unsigned char	vendor_info[7];
 	unsigned char REALTEK_OUI[] = {0x00, 0xe0, 0x4c};
 	HAL_DATA_TYPE	*pHalData = GET_HAL_DATA(padapter);
 
